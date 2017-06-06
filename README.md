@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+ΟΝΟΜΑΤΕΠΩΝΥΜΟ: ΣΕΒΑΣΤΟΠΟΥΛΟΥ ΕΛΕΝΗ
+Α.Μ.: Π2013128
++Bonus GitHub Page: https://p13seva.github.io
+# Σύνοψη
+Η παρούσα αναφορά δημιουργήθηκε στα πλαίσια του μαθήματος, 6ου εξαμήνου, "Τεχνολογία Λογισμικού". Σκοπός είναι η περιγραφή της εξαμηνιαίας εργασίας του μαθήματος, με αντικείμενο την επέκταση του παιχνιδιού Pacman -ένα HTML5 video game–.
 
-You can use the [editor on GitHub](https://github.com/p13seva/p13seva.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Για την εύρεση της εργασίας, χρήσιμα link είναι τα παρακάτω:
+* [Προσωπικό αποθετήριό](https://github.com/p13seva/pacman)
+* [Παιχνίδι](https://p13seva.github.io/pacman/)
+* [Github Page παιχνιδιού](https://p13seva.github.io/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Εισαγωγή
 
-### Markdown
+Το Pacman είναι αποτελεί στις μέρες μας ένα κλασικό βιντεοπαιχνίδι, στα πλαίσια της εργασίας επιχειρήθηκε η ανανέωσή του με την προσθήκη σ'αυτό των χαρακτήρων απο κλασικά κινούμενα σχέδια.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Επιλογή εργαλείων
 
-```markdown
-Syntax highlighted code block
+Η ανάπτυξη του κώδικα του παιχνιδιού, ο οποίος βρίσκεται στο αρχείο [index.html](https://github.com/p13seva/pacman/blob/master/index.html), έγινε μέσω του Github και δεν χρησιμοποιήθηκε κάποιος επεξεργαστής κειμένου. Ωστόσο, για την κατασκευή της νέας πίστας χρησιμοποιήθηκε ως εργαλείο το λογισμικό [Tiled](http://www.mapeditor.org/).
 
-# Header 1
-## Header 2
-### Header 3
+# Διαδικασία ανάπτυξης
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Στα πλαίσια του 1ου παραδοτέου, η μοναδική αλλαγή που πραγματοποιήθηκε στον δοθέντα κώδικα είναι η αλλαγή 
 ```
+this.load.baseURL = 'https://p13seva.github.io/pacman/';
+```
+Στα πλαίσια του 2ου παραδοτέου του μαθήματος, απ' όπου και ξεκίνησε ουσιαστικά η ανάπτυξη του παιχνιδιού, πραγματοποιήθηκε η αλλαγή του πρωταγωνιστή του παιχνιδιού, η προσθήκη επιπλέον αντικειμένων καθώς και η δημιουργία μιας νέας πίστας. Πιο συγκεκριμένα, ο πρωταγωνιστής Pacman αντικαταστάθηκε από τον Martian (χαρακτήρα των looney tunes) και οι αρχικές κουκίδες (dots) αντικαταστάθηκαν από πλανήτες. Επιπλέον, τη θέση της αρχικά δοθείσας πίστας πήρε μια νέα, με την ανατοποθέτηση των tiles του δοθέντος tileset στο χώρο της πίστας. Η νέα αυτή πίστα δημιουργήθηκε με τη χρήση του Tiled.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Ο πρωταγωνιστής και τα αντικείμενα που χρησιμοποιήθηκαν είναι:
+<p align="center">
+  <img src="http://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Marvin-Martian-icon.png">
+  <img src="http://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Gossamer-Angry-icon.png">
+  <img src="http://icons.iconarchive.com/icons/aha-soft/space/128/Saturn-icon.png">
+  <img src="http://icons.iconarchive.com/icons/artdesigner/webtoys/64/Planet-icon.png">
+</p>
 
-### Jekyll Themes
+Η νέα πίστα που δημιουργήθηκε είναι:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/p13seva/pacman/master/assets/MartianMap.png">
+</p>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/p13seva/p13seva.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Στη συνέχεια, στα πλαίσια του 3ου παραδοτέου, το παιχνίδι προεκτάθηκε, με τη προσθήκη score και ήχου. Πιο συγκεκριμένα, στο πάνω μέρος της οθόνης που βλέπει ο χρήστης, προστέθηκε το score που συγκεντρώνει ο παίκτης μαζεύοντας τους πλανήτες της πίστας.Επίσης, προστέθηκε ήχος ο οποίος ακούγεται καθ' όλη τη διάρκεια του παιχνιδιού.Τέλος προστέθηε και ενας εχθρός, ο οποίος κινείται τυχαία στην πίστα.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
